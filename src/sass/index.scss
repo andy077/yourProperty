@@ -1,0 +1,18 @@
+// Common Navigation Bar for all Pages
+@import '../Header/navBar';
+
+// Common Footer for all Pages
+@import '../Footer/footer';
+
+// Home Page
+@import '../Home/homeFront';
+@import '../Home/about';
+
+// Buyers Page
+@import '../Buy/_buyFront';
+@import '../Buy/buyFilter';
+@import '../Buy/buyCatalog';
+
+// Selling Page
+@import '../Sell/sellFront';
+@import '../Sell/sellAbout';

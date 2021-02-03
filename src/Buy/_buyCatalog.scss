@@ -1,0 +1,111 @@
+
+
+.catalog_main{
+    padding: 20px;
+
+    .catalog_title{
+        padding: 30px 0;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+        color: #74828F;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .sort{
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        select{
+            letter-spacing: 1px;
+            outline: none;
+            border: 1px solid #a39e9e;
+            border-radius: 3px;
+            padding: 5px;
+            font-size: 12px;
+        }
+    }
+    .catalog_row{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .catalog_col{
+            flex-basis: 30%;
+            margin: 20px 0;
+            border: 1px solid #d2dae2;
+            cursor: pointer;
+            transition: .5s;
+            
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 100%;
+            }
+
+            .CatDesc{
+                padding: 15px;
+                line-height: 25px;
+                font-size: 14px;
+                color: #1e272e;
+
+                
+            }
+        }
+    }
+    .showMore_div{
+       padding: 0 35px 10px 0;
+       text-align: right;
+
+       .show_more_btn{
+           border: none;
+           outline: none;
+           cursor: pointer;
+           background: transparent;
+           font-size: 12px;
+           text-transform: uppercase;
+           color: #e15f41;
+
+           &:hover{
+               transform: scale(1.04);
+           }
+       }
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .catalog_main{
+        padding: 0;
+
+        .sort{
+            padding: 0 15px;
+        }
+
+        .catalog_title{
+            padding: 40px 20px;
+        }
+        .catalog_row{
+            padding: 10px;
+
+            .catalog_col{
+                flex-basis: 100%;
+            }
+        }
+        .showMore_div{
+            padding: 0 0 30px 0;
+            text-align: center;
+            .show_more_btn{
+               font-size: 15px;
+            }
+        }
+    }
+}

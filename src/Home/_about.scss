@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+    .about_container {
+        background: #F6F6F6;
+        padding: 30px;
+    
+        .about_row {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            .about_col{
+                flex-basis: 33%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+    
+                .info_icon{
+                    font-size: 50px;
+                    color: #222f3e;
+                }
+                h2{
+                    margin: 10px 0;
+                    color: #222f3e;
+                    font-size: 23px;
+                }
+                p{
+                    color: #a39e9e;
+                    font-size: 15px;
+                }
+            }
+    
+        }
+    }
+.info_div{
+    padding: 20px;
+    .info_row{
+        padding: 40px;
+
+        .info_col{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 10px 0;
+
+            .img_div{
+                flex-basis: 50%;
+            }
+            &:nth-child(2){
+                flex-direction: row-reverse;
+            }
+
+            img{
+                max-width: 100%;
+            }
+
+            .title_info{
+                margin: auto;
+                padding: 0 25px;
+                flex-basis: 50%;
+                letter-spacing: .5px;
+                h2{
+                    margin-bottom: 20px;
+                    color: #1e272e;
+                    font-size: 23px;
+                }
+                p{
+                    color: #a39e9e;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.about_desc{
+    background: #F6F6F6;
+    padding: 20px 0;
+    .desc_div{
+        padding: 30px 20px;
+        text-align: center;
+        max-width: 1000px;
+        margin: auto;
+
+        h2{
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: #1e272e;
+        }
+        p{
+            color: #a39e9e;
+            line-height: 20px;
+            letter-spacing: .5px;
+            font-size: 14px;
+        }
+    }
+}
+
+    .more_about_div{
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .more_div{
+            min-width: 500px;
+            color: #dadada;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            a{
+               background: #dadada;
+               color: #000;
+               padding: 10px 20px;
+               border-radius: 20px;
+               text-transform: uppercase;
+               font-weight: bold;
+               cursor: pointer;
+               font-size: 15px;
+
+               &:hover{
+                   background: #515bd4;
+               }
+            }
+        }
+    }
+
+@media screen and (max-width: 800px) {
+    .about_container{
+        .about_row{
+            padding: 20px 0;
+            .about_col{
+                flex-basis: 100%;
+                padding: 20px 0;
+            p{
+                font-size: 20px;
+            }
+                
+            }
+        }
+    }
+
+  .info_div{
+      padding: 0;
+      .info_row{
+          padding: 0;
+          .info_col{
+              text-align: left;
+              padding: 15px 0;
+            .img_div{
+                flex-basis: 100%;
+            }
+            .title_info{
+                flex-basis: 100%;
+                padding: 0 10px;
+                margin: 15px 0;
+            }
+          }
+      }
+  }
+  
+  .about_desc{
+      padding: 0;
+      .desc_div{
+          padding: 30px 12px;
+            text-align: left;
+      }
+  }
+
+    .more_about_div{
+        .more_div{
+            min-width: 200px;
+            a{
+                margin-top: 20px;
+            }
+        }
+    }
+  
+
+}

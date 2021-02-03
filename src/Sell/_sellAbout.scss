@@ -1,0 +1,128 @@
+
+.sellAbout_main{
+    background: #fafbfd;
+    .sellAbout_title{
+        padding: 40px 0;
+        max-width: 950px;
+        margin: auto;
+        text-align: center;
+        color: #74828F;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-size: 13px;
+    }
+
+    .sell_details_main{
+       
+        .sell_details_inner{
+            // background: yellow;
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 0;
+
+            .details_title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                line-height: 35px;
+                letter-spacing: 1px;
+
+                p{
+                    color: #74828F;
+                    font-size: 13px;
+                }
+            }
+
+            .details_inputs{
+            .input_row{
+                .input_col{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px 0;
+                    line-height: 35px;
+                    letter-spacing: 1px;
+
+                    label{
+                        font-size: 14px;
+                        color: #485460;
+                    }
+
+                    input{
+                        padding: 8px 15px;
+                        background: #F8F9FC;
+                        border: none;
+                        outline: none;
+                        box-shadow: 0 0 1px #778ca3;
+
+                    }
+                    &:nth-last-of-type(-n+4)
+                    {
+                        input{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+            }
+            .submit_btn{
+                // background: yellow;
+                padding: 20px 0;
+                button{
+                    border: none;
+                    background: #e74c3c;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-radius: 2px;
+                    outline: none;
+                    padding: 8px 18px;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover{
+                        transform: scale(1.05);
+                        background: #3ae374;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+
+.sellAbout_main{
+    .sellAbout_title{
+        padding: 30px 10px 0 10px;
+    }
+    .sell_details_main{
+        padding: 15px;
+
+        .details_title{
+            // background: yellow;
+            padding-bottom: 20px;
+            text-align: center;
+            
+            p{
+                margin-top: 10px;
+                line-height: 25px;
+                font-size: 14px !important;
+            }
+        }
+
+        label{
+            font-size: 15px !important;
+        }
+        input{
+            padding: 12px 15px !important;
+        }
+
+        button{
+            padding: 13px 30px !important;
+            font-size: 17px;
+            letter-spacing: 2px !important;
+        }
+    }
+}
+}

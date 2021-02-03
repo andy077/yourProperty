@@ -1,0 +1,30 @@
+.buy_main {
+    background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)) ,url('../images/buyBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+
+    .buy_div{
+        // background: yellow;
+        max-width: 800px;
+        height: 25vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #f1f2f6;
+        font-size: 18px;
+        letter-spacing: 2px;
+        animation: slide_up 1s ease;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .buy_main{
+        .buy_div{
+            font-size: 16px;
+        }
+    }
+}
